@@ -66,13 +66,10 @@
            </size>
           </property>
           <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap>logo.png</pixmap>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pngs/logo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="scaledContents">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
          </widget>
         </item>
@@ -91,13 +88,10 @@
            </size>
           </property>
           <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap>Logitech_logo.png</pixmap>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pngs/Logitech_logo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="scaledContents">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
           <property name="wordWrap">
            <bool>false</bool>
@@ -474,6 +468,8 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="root.qrc"/>
+ </resources>
  <connections/>
 </ui>

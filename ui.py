@@ -3,12 +3,13 @@
 # Form implementation generated from reading ui file 'ui.ui',
 # licensing of 'ui.ui' applies.
 #
-# Created: Wed May 22 20:32:00 2019
+# Created: Wed May 22 21:50:39 2019
 #      by: pyside2-uic  running on PySide2 5.12.3
 #
 # WARNING! All changes made in this file will be lost!
 
 from PySide2 import QtCore, QtGui, QtWidgets
+import resource_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -35,17 +36,13 @@ class Ui_MainWindow(object):
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setMinimumSize(QtCore.QSize(100, 100))
         self.label_3.setMaximumSize(QtCore.QSize(100, 100))
-        self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("logo.png"))
-        self.label_3.setScaledContents(True)
+        self.label_3.setScaledContents(False)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_10.addWidget(self.label_3)
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setMinimumSize(QtCore.QSize(300, 90))
         self.label_4.setMaximumSize(QtCore.QSize(300, 90))
-        self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("Logitech_logo.png"))
-        self.label_4.setScaledContents(True)
+        self.label_4.setScaledContents(False)
         self.label_4.setWordWrap(False)
         self.label_4.setMargin(0)
         self.label_4.setIndent(-1)
@@ -198,6 +195,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "MainWindow", None, -1))
+        self.label_3.setText(QtWidgets.QApplication.translate("MainWindow", "<html><head/><body><p><img src=\":/pngs/logo.png\"/></p></body></html>", None, -1))
+        self.label_4.setText(QtWidgets.QApplication.translate("MainWindow", "<html><head/><body><p><img src=\":/pngs/Logitech_logo.png\"/></p></body></html>", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("MainWindow", "Mode", None, -1))
         self.solidModeRadioButton.setText(QtWidgets.QApplication.translate("MainWindow", "Solid", None, -1))
         self.cycleModeRadioButton.setText(QtWidgets.QApplication.translate("MainWindow", "Cycle", None, -1))
